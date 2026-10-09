@@ -19,9 +19,16 @@ export function Landing() {
 
   return (
     <div className="leaf-grid min-h-screen">
-      <header className="mx-auto flex max-w-5xl items-center justify-between px-5 py-6">
-        <Wordmark />
-        <a className="text-sm text-forest underline-offset-4 hover:underline" href="/privacy">
+      <header className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-6">
+        <div className="min-w-0">
+          <div className="sm:hidden">
+            <Wordmark compact />
+          </div>
+          <div className="hidden sm:block">
+            <Wordmark />
+          </div>
+        </div>
+        <a className="shrink-0 text-sm text-forest underline-offset-4 hover:underline" href="/privacy">
           Privacy
         </a>
       </header>
