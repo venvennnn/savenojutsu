@@ -1,0 +1,11 @@
+{
+  "framework": "nextjs",
+  "headers": [
+    {
+      "source": "/api/(classify|checkout|checkout/verify)",
+      "headers": [
+        { "key": "Cache-Control", "value": "no-store, no-cache, must-revalidate, private" }
+      ]
+    }
+  ]
+}
